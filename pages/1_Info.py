@@ -1,4 +1,7 @@
+import streamlit as st
 import pandas as pd
+
+st.title("ℹ️ Info Page")
 
 # Sample data
 data = [
@@ -12,5 +15,5 @@ data = [
 # Create DataFrame
 df = pd.DataFrame(data)
 
-# Display the table
-print(df)
+# ✅ Display in Streamlit UI
+st.dataframe(df)  # or use st.table(df) for a static table
